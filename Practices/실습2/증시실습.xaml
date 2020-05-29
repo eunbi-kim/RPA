@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="증시실습" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1057,1530" sap2010:WorkflowViewState.IdRef="증시실습_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="증시실습" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1041,1570" sap2010:WorkflowViewState.IdRef="증시실습_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -49,18 +49,13 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="증시실습" sap:VirtualizedContainerService.HintSize="1051,1365" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Boolean" Name="isPass">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Boolean" Value="True" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="isPass" />
       <Variable x:TypeArguments="ui:GenericValue" Name="tValue" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -82,7 +77,7 @@
             </ActivityAction.Argument>
             <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="933,1080" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="897,916" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="897,915" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="variable1" />
                   </Sequence.Variables>
@@ -117,7 +112,7 @@
                       <OutArgument x:TypeArguments="ui:GenericValue">[tValue]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <If Condition="[Decimal.Parse(tValue.Replace(&quot;,&quot;,&quot;&quot;)) &gt; 480000]" sap:VirtualizedContainerService.HintSize="855,616" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If Condition="[Decimal.Parse(tValue.Replace(&quot;,&quot;,&quot;&quot;)) &gt; 480000]" sap:VirtualizedContainerService.HintSize="855,615" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="376,468" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
@@ -126,7 +121,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[tValue]" />
-                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;거래량이 460,000을 초과하였음.&quot; + tValue]" DisplayName="Send SMTP Mail Message" Email="aqua9131" EnableSSL="True" From="aqua9131@naver.com" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Name="김은비" Password="envi9131b*" Port="465" SecureConnection="Auto" Server="smtp.naver.com" Subject="거래량" To="aqua9131@naver.com">
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;거래량이 460,000을 초과하였음.&quot; + tValue]" DisplayName="Send SMTP Mail Message" Email="aqua9131" EnableSSL="True" From="aqua9131@naver.com" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Name="김은비" Port="465" SecureConnection="Auto" Server="smtp.naver.com" Subject="거래량" To="aqua9131@naver.com">
                           <ui:SendMail.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
                           </ui:SendMail.Files>
