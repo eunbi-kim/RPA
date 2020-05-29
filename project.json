@@ -30,7 +30,13 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8ca49168-93c7-484e-b3ac-31d398a16d18",
+        "fileName": "Practices\\실습3\\정상실행확인.xaml"
+      }
+    ]
   },
   "expressionLanguage": "VisualBasic"
 }
