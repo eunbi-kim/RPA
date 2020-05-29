@@ -127,7 +127,7 @@
                         <ui:AppendLine DisplayName="Append Line" FileName="[&quot;Result_&quot;+Now.ToString(&quot;yyy_MM_dd&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;코어 수: &quot;+cores]" />
                       </If.Then>
                       <If.Else>
-                        <ui:AppendLine DisplayName="Append Line" FileName="[&quot;Result_&quot;+Now.ToString(&quot;yyy_MM_dd&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[&quot;코어 수: &quot;+cores]" />
+                        <ui:AppendLine DisplayName="Append Line" FileName="[&quot;Result_&quot;+Now.ToString(&quot;yyy_MM_dd&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="코어수 이상" />
                       </If.Else>
                     </If>
                   </Sequence>
@@ -174,7 +174,7 @@
                         <ui:AppendLine DisplayName="Append Line" FileName="[&quot;Result_&quot;+Now.ToString(&quot;yyy_MM_dd&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[&quot;메모리 용량: &quot;+memory]" />
                       </If.Then>
                       <If.Else>
-                        <ui:AppendLine DisplayName="Append Line" FileName="[&quot;Result_&quot;+Now.ToString(&quot;yyy_MM_dd&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_11" Text="[&quot;메모리 용량: &quot;+memory]" />
+                        <ui:AppendLine DisplayName="Append Line" FileName="[&quot;Result_&quot;+Now.ToString(&quot;yyy_MM_dd&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_11" Text="메모리 용량 이상" />
                       </If.Else>
                     </If>
                   </Sequence>

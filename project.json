@@ -3,6 +3,7 @@
   "description": "RPA 활용 교육 실습 프로젝트",
   "main": "Main.xaml",
   "dependencies": {
+    "Alphabet.Workflow.Activities": "[3.1.0]",
     "UiPath.Excel.Activities": "[2.8.5]",
     "UiPath.Mail.Activities": "[1.8.5]",
     "UiPath.System.Activities": "[20.4.0]",
@@ -30,18 +31,7 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": [
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "4783528e-2397-4f07-a913-b20ee3d7ddb3",
-        "fileName": "Practices\\실습3\\CPU Z.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "35d413d0-2fdd-43a9-ab23-0a9d80588287",
-        "fileName": "Practices\\실습3\\케이스1.xaml"
-      }
-    ]
+    "fileInfoCollection": []
   },
   "expressionLanguage": "VisualBasic"
 }

@@ -7,3 +7,7 @@ TC003 : 메모리 확인
 메모리 용량: 16 GBytes
 
 CPU Z Test Stop 05/29/202014:30
+Naver Test Start 05/29/202015:18
+Naver Test Start 05/29/202015:18
+Naver Test Start 05/29/202015:19
+Naver Test Start 05/29/202015:23
