@@ -1,0 +1,26 @@
+﻿TC001 테스트 시작
+?뚯뒪?멸? ?깃났?덉뒿?덈떎.
+TC002 ?뚯뒪???쒖옉
+TC001 ?뚯뒪???쒖옉
+?뚯뒪?멸? ?깃났?덉뒿?덈떎.
+TC002 ?뚯뒪???쒖옉
+TC001 ?뚯뒪???쒖옉
+TC001 ?뚯뒪???쒖옉
+UiPath.Core.InvalidUiElementException: UiElement媛 ???댁긽 ?좏슚?섏? ?딆뒿?덈떎. ---> System.Runtime.InteropServices.COMException: ?좏슚?섏? ?딆? UI ?몃뱶?낅땲??
+   ?꾩튂: UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   ?꾩튂: UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector, IPlaceholderResolver placeholderResolver)
+   --- ?대? ?덉쇅 ?ㅽ깮 異붿쟻????---
+   ?꾩튂: UiPath.Core.Activities.ScopeActivity.OnFaulted(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom)
+   ?꾩튂: System.Activities.Runtime.FaultCallbackWrapper.Invoke(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom)
+   ?꾩튂: System.Activities.Runtime.FaultCallbackWrapper.FaultWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+TC001 ?뚯뒪???쒖옉
+?뚯뒪?멸? ?ㅽ뙣?덉뒿?덈떎.
+TC002 ?뚯뒪???쒖옉
+TC001 테스트 시작
+TC002 테스트 시작
+TC001 테스트 시작
+TC002 테스트 시작
+TC001 테스트 시작
+TC002 테스트 시작
+TC001 테스트 시작
+TC002 테스트 시작
